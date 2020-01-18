@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Hello World Title</title>
+	<script type="text/javascript">
+		function addNumbers(num1, num2) {
+			console.log("Adding numbers "+num1+" "+num2)
+			return num1+num2;
+		}
+
+		function printAddition(num1, num2) {
+			var addition = addNumbers(num1,num2);
+			console.log("Addition is "+ addition)
+			document.getElementById("lblOutput").innerHTML = "You addition result is "+addition
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name=""><br>
+	<input type="text" name=""><br>
+	<label id="lblOutput">Output will be shown here</label>
+	<br>
+	<button onclick="printAddition(2,8)">Calculate</button>
+</body>
+</html>
